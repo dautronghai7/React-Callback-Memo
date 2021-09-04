@@ -1,6 +1,8 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import './App.css';
 import ChildrenComponent from './components/childrenComponent';
+import UseReducerTutorial from './components/useReducerTutorial';
+
   /**useMemo */
   const expensiveFunction = (number)=>{
     console.log('Bat dau');
@@ -49,6 +51,7 @@ function App() {
 
   return (
     <div className="App">
+        <UseReducerTutorial />
         <h1>Example useMemo hook</h1>
         <p>expensive function: {number}</p>
         <p>Count: {count}</p>
